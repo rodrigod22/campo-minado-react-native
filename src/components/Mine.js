@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 
 
 export default props => {
   return (
-    <View style={StyleSheet.container}>
+    <View style={styles.container}>
       <View style={styles.coreMine} />
       <View style={styles.line} />
       <View style={[styles.line, { transform: [{ rotate: '45deg' }] }]} />
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   line: {
     position: 'absolute',
     height: 3,
-    width: 20,
+    width: 22,
     borderRadius: 3,
     backgroundColor: 'black'
   }
